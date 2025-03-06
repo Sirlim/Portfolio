@@ -1,0 +1,30 @@
+[04-May-2024 12:38:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mail() in /home/ziwjrfxn/public_html/php/form-process.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/ziwjrfxn/public_html/php/form-process.php on line 59
+[04-May-2024 12:38:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mail() in /home/ziwjrfxn/public_html/php/form-process.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/ziwjrfxn/public_html/php/form-process.php on line 59
+[04-May-2024 12:38:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mail() in /home/ziwjrfxn/public_html/php/form-process.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/ziwjrfxn/public_html/php/form-process.php on line 59
+[06-Jun-2024 18:21:47 UTC] PHP Warning:  Undefined variable $name in /home/ziwjrfxn/public_html/php/form-process.php on line 43
+[06-Jun-2024 18:21:47 UTC] PHP Warning:  Undefined variable $email in /home/ziwjrfxn/public_html/php/form-process.php on line 46
+[06-Jun-2024 18:21:47 UTC] PHP Warning:  Undefined variable $mobile in /home/ziwjrfxn/public_html/php/form-process.php on line 49
+[06-Jun-2024 18:21:47 UTC] PHP Warning:  Undefined variable $Dtype in /home/ziwjrfxn/public_html/php/form-process.php on line 52
+[06-Jun-2024 18:21:47 UTC] PHP Warning:  Undefined variable $message in /home/ziwjrfxn/public_html/php/form-process.php on line 55
+[06-Jun-2024 18:21:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mail() in /home/ziwjrfxn/public_html/php/form-process.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/ziwjrfxn/public_html/php/form-process.php on line 59
+[01-Jul-2024 18:53:45 UTC] PHP Warning:  Undefined variable $name in /home/ziwjrfxn/public_html/php/form-process.php on line 43
+[01-Jul-2024 18:53:45 UTC] PHP Warning:  Undefined variable $email in /home/ziwjrfxn/public_html/php/form-process.php on line 46
+[01-Jul-2024 18:53:45 UTC] PHP Warning:  Undefined variable $mobile in /home/ziwjrfxn/public_html/php/form-process.php on line 49
+[01-Jul-2024 18:53:45 UTC] PHP Warning:  Undefined variable $Dtype in /home/ziwjrfxn/public_html/php/form-process.php on line 52
+[01-Jul-2024 18:53:45 UTC] PHP Warning:  Undefined variable $message in /home/ziwjrfxn/public_html/php/form-process.php on line 55
+[01-Jul-2024 18:53:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mail() in /home/ziwjrfxn/public_html/php/form-process.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/ziwjrfxn/public_html/php/form-process.php on line 59
