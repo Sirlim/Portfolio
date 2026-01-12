@@ -3,111 +3,74 @@
   <head>
     <meta charset="utf-8"/>
     <title>Salim - Web Design &amp; Digital Marketing Portfolio</title>
-    <meta name="description" content="Creative Agency, Marketing Agency Template">
-    <meta name="keywords" content="Creative Agency, Marketing Agency">
-    <meta name="author" content="rajesh-doot">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#101010">
     <link href="img/salim-logo.jpg" rel="icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/plugin.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/darkmode.css" rel="stylesheet">
     <style>
-        .hc-offcanvas-nav.close-no-label:not(.rtl) .nav-title { padding-right: 60px; display: none; }
         @keyframes scrolling { 0% { transform: translateX(80%); } 100% { transform: translateX(-20%); } }
-
-        :root {
-            --primary-gold: #f1c40f; 
-            --text-main: #2d3436;
-            --text-muted: #636e72;
-            --bg-light: #f9f9f9;
-        }
-
-        body { font-family: 'Poppins', sans-serif; margin: 0; color: var(--text-main); }
+        :root { --primary-gold: #f1c40f; --text-main: #2d3436; --text-muted: #636e72; --bg-light: #f9f9f9; }
+        body { font-family: 'Poppins', sans-serif; color: var(--text-main); }
         .portfolio-section { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
-        .section-header { text-align: center; margin-bottom: 50px; }
-        .section-header h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 10px; }
-        .section-header h2::after { content: '.'; color: var(--primary-gold); }
-
         .results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-        .result-card { background: #fff; border-radius: 16px; border: 1px solid #eee; transition: all 0.3s ease; display: flex; flex-direction: column; }
+        .result-card { background: #fff; border-radius: 16px; border: 1px solid #eee; transition: all 0.3s ease; padding: 25px; }
         .result-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.07); }
-        .card-body { padding: 25px; flex-grow: 1; }
-        .category { font-size: 0.7rem; font-weight: 700; color: var(--primary-gold); text-transform: uppercase; letter-spacing: 1px; }
-        .company-name { font-size: 1.3rem; margin: 10px 0; font-weight: 800; }
-        .description { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 20px; }
-        .metrics-box { background: var(--bg-light); padding: 15px; border-radius: 12px; display: flex; justify-content: space-around; margin-bottom: 15px; }
-        .metric { text-align: center; }
+        .category { font-size: 0.7rem; font-weight: 700; color: var(--primary-gold); text-transform: uppercase; }
+        .metrics-box { background: var(--bg-light); padding: 15px; border-radius: 12px; display: flex; justify-content: space-around; margin-top: 15px; }
         .m-value { display: block; font-size: 1.1rem; font-weight: 800; color: #000; }
-        .m-label { font-size: 0.6rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
-        .tag-row { display: flex; gap: 8px; flex-wrap: wrap; }
-        .tag { font-size: 0.65rem; background: #eee; padding: 4px 10px; border-radius: 4px; font-weight: 600; }
+        .m-label { font-size: 0.6rem; text-transform: uppercase; color: var(--text-muted); }
     </style>
   </head>
   <body>
     <header class="nav-bg-w main-header navfix fixed-top menu-white">
       <div class="container-fluid m-pad">
         <div class="menu-header">
-          <div class="dsk-logo"><a class="nav-brand" href="index.html">
-            <img src="img/salim-logo.png" alt="Logo" class="mega-white-logo"/>
-            <img src="img/salim-logo.png" alt="Logo" class="mega-darks-logo"/>
-            </a>
-          </div>
-          <div class="custom-nav" role="navigation">
+          <div class="dsk-logo"><a class="nav-brand" href="index.html"><img src="img/salim-logo.png" alt="Logo" class="mega-darks-logo"/></a></div>
+          <div class="custom-nav">
             <ul class="nav-list">
-              <li><a class="nav-link" href="index.html" style="color:#212529;">Home</a></li>
-              <li class="nav-item"> <a class="nav-link" href="about.html" style="color:#212529;">About </a> </li>
-              <li class="nav-item"> <a class="nav-link" href="portfolio.html" id="Portfolio" style="color:#D3C668;"> Portfolio</a> </li>
-              <li class="nav-item"> <a class="nav-link" href="get-quote.html" style="color:#212529;">Contact</a> </li>
-              <li class="nav-item"> <a style="background-color:#ddc525; padding: 5px 10px; border-radius:20px; color:#fff;" class="nav-link" href="#">Get A Quote</a> </li>
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="about.html">About</a></li>
+              <li><a class="nav-link" href="portfolio.html" style="color:#D3C668;">Portfolio</a></li>
+              <li><a class="nav-link" href="get-quote.html">Contact</a></li>
             </ul>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="portfolio-section" style="margin-top: 100px;">
-        <div class="section-header">
-            <h2>proven results</h2>
-            <p>Scaling brands through 360° marketing and data-driven design.</p>
-        </div>
+    <section class="portfolio-section" style="margin-top: 120px;">
+        <div style="text-align: center; margin-bottom: 50px;"><h2>proven results.</h2></div>
         <div class="results-grid">
             <div class="result-card">
-                <div class="card-body">
-                    <span class="category">Ecommerce & SEO</span>
-                    <h3 class="company-name">Unique Furniture Kenya</h3>
-                    <p class="description">Launched a CRM-integrated E-commerce site and achieved record-breaking sales through aggressive daily SEO strategies.</p>
-                    <div class="metrics-box">
-                        <div class="metric"><span class="m-value counter" data-target="25">0</span><span class="m-value" style="display:inline">%</span><span class="m-label">Sales Increase</span></div>
-                        <div class="metric"><span class="m-value">#1</span><span class="m-label">SEO Ranking</span></div>
-                    </div>
+                <span class="category">Ecommerce & SEO</span>
+                <h3>Unique Furniture Kenya</h3>
+                <p>Launched CRM-integrated shop & daily SEO strategy.</p>
+                <div class="metrics-box">
+                    <div style="text-align:center"><span class="m-value counter" data-target="25">0</span><span class="m-label">Sales Increase</span></div>
+                    <div style="text-align:center"><span class="m-value">#1</span><span class="m-label">Google Ranking</span></div>
                 </div>
             </div>
             <div class="result-card">
-                <div class="card-body">
-                    <span class="category">Integrated Marketing</span>
-                    <h3 class="company-name">Optica LTD</h3>
-                    <p class="description">Supervised nationwide offline marketing (billboards & store branding) and managed micro-influencer campaigns for consistent growth.</p>
-                    <div class="metrics-box">
-                        <div class="metric"><span class="m-value counter" data-target="20">0</span><span class="m-value" style="display:inline">%</span><span class="m-label">Sign-up Rate</span></div>
-                        <div class="metric"><span class="m-value">360°</span><span class="m-label">Offline Branding</span></div>
-                    </div>
+                <span class="category">Integrated Marketing</span>
+                <h3>Optica LTD</h3>
+                <p>Supervised Offline Branding (Billboards & Stores) and local activations increasing foot traffic.</p>
+                <div class="metrics-box">
+                    <div style="text-align:center"><span class="m-value">360°</span><span class="m-label">Offline Branding</span></div>
+                    <div style="text-align:center"><span class="m-value">High</span><span class="m-label">Foot Traffic</span></div>
                 </div>
             </div>
             <div class="result-card">
-                <div class="card-body">
-                    <span class="category">Performance Ads</span>
-                    <h3 class="company-name">Columbia Africa Clinic</h3>
-                    <p class="description">Executed high-converting Facebook and Google Ads campaigns, driving a quarterly boost in patient appointments.</p>
-                    <div class="metrics-box">
-                        <div class="metric"><span class="m-value counter" data-target="30">0</span><span class="m-value" style="display:inline">%</span><span class="m-label">Quarterly Growth</span></div>
-                        <div class="metric"><span class="m-value">Ads</span><span class="m-label">Google/FB</span></div>
-                    </div>
+                <span class="category">Performance Ads</span>
+                <h3>Columbia Africa</h3>
+                <p>Google & FB ads driving high-intent patient appointments.</p>
+                <div class="metrics-box">
+                    <div style="text-align:center"><span class="m-value counter" data-target="30">0</span><span class="m-label">Quarterly Growth</span></div>
+                    <div style="text-align:center"><span class="m-value">LeadGen</span><span class="m-label">PPC Strategy</span></div>
                 </div>
             </div>
         </div>
@@ -115,12 +78,9 @@
 
     <section class="portfolio-page pad-tb">
       <div class="container">
-        <div class="row justify-content-left">
+        <div class="row">
           <div class="col-lg-4">
-            <div class="common-heading pp">
-              <span style="color:#D3C668;">My Work</span>
-              <h2>Portfolio</h2>
-            </div>
+            <div class="common-heading pp"><span>My Work</span><h2>Portfolio</h2></div>
           </div>
           <div class="col-lg-8 v-center">
             <div class="filters">
@@ -134,21 +94,68 @@
               </ul>
             </div>
           </div>
-          </div>
-        
+        </div>
+
         <div class="row card-list">
           <div class="col-lg-4 col-sm-6 single-card-item camp">
             <div class="isotope_item hover-scale">
-              <div class="item-image"><a href="#"><img src="img/black-nov-post.png" alt="portfolio" class="img-fluid"/></a></div>
-              <div class="item-info"><h4><a href="#">Black November</a></h4><p>Social Media Post</p></div>
+              <div class="item-image"><img src="img/black-nov-post.png" class="img-fluid"/></div>
+              <div class="item-info"><h4>Black November</h4><p>Social Media Post</p></div>
             </div>
           </div>
+          <div class="col-lg-4 col-sm-6 single-card-item camp">
+            <div class="isotope_item hover-scale">
+              <div class="item-image"><img src="img/end-yer-sale.png" class="img-fluid"/></div>
+              <div class="item-info"><h4>End Year Sale</h4><p>Social Media Post</p></div>
+            </div>
           </div>
+          <div class="col-lg-4 col-sm-6 single-card-item graphic">
+            <div class="isotope_item hover-scale">
+              <div class="item-image"><img src="img/drone-farm.png" class="img-fluid"/></div>
+              <div class="item-info"><h4>Agrotech</h4><p>Social Media Post</p></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 single-card-item graphic">
+            <div class="isotope_item hover-scale">
+              <div class="item-image"><img src="img/soil-testing.png" class="img-fluid"/></div>
+              <div class="item-info"><h4>Agrotech Soil</h4><p>Social Media Post</p></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 single-card-item graphic">
+            <div class="isotope_item hover-scale">
+              <div class="item-image"><img src="img/we-move.png" class="img-fluid"/></div>
+              <div class="item-info"><h4>Movers and Packers</h4><p>Social Media Post</p></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 single-card-item graphic">
+            <div class="isotope_item hover-scale">
+              <div class="item-image"><img src="img/electrics.png" class="img-fluid"/></div>
+              <div class="item-info"><h4>Auto Spares</h4><p>Web Banner</p></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 single-card-item app">
+            <div class="isotope_item hover-scale">
+              <div class="item-image"><img src="img/sign-up-ui.jpg" class="img-fluid"/></div>
+              <div class="item-info"><h4>Sign Up Form</h4><p>UI Design</p></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 single-card-item website">
+            <div class="isotope_item hover-scale">
+              <div class="item-image"><img src="img/columbia-africa-thumbnail.jpg" class="img-fluid"/></div>
+              <div class="item-info"><h4>Columbia Africa</h4><p>Wordpress Website</p></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 single-card-item website">
+            <div class="isotope_item hover-scale">
+              <div class="item-image"><img src="img/uniquefurn.png" class="img-fluid"/></div>
+              <div class="item-info"><h4>Unique Furniture</h4><p>Ecommerce</p></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/plugin.min.js"></script>
     <script src="js/main.js"></script>
     <script>
