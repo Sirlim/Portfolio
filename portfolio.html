@@ -2,103 +2,54 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8"/>
-    <title>Salim - Web Design &amp; Digital Marketing Agency HTML Template</title>
+    <title>Salim - Web Design &amp; Digital Marketing Portfolio</title>
     <meta name="description" content="Creative Agency, Marketing Agency Template">
     <meta name="keywords" content="Creative Agency, Marketing Agency">
     <meta name="author" content="rajesh-doot">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#101010">
-    <!--website-favicon-->
     <link href="img/salim-logo.jpg" rel="icon">
-    <!--plugin-css-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/plugin.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- template-style-->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/darkmode.css" rel="stylesheet">
-        <style>
-        .hc-offcanvas-nav.close-no-label:not(.rtl) .nav-title {
-    padding-right: 60px;
-    display: none;
-}
-@keyframes scrolling {
+    <style>
+        .hc-offcanvas-nav.close-no-label:not(.rtl) .nav-title { padding-right: 60px; display: none; }
+        @keyframes scrolling { 0% { transform: translateX(80%); } 100% { transform: translateX(-20%); } }
 
-    0% {
-        transform: translateX(80%);
-    }
-
-    100% {
-        transform: translateX(-20%);
-    }
-}
-
-
-			:root {
-    --primary-color: #f1c40f; /* From your 'About Me' button */
-    --dark-text: #2d3436;
-    --light-bg: #f9f9f9;
-}
-
-:root {
+        :root {
             --primary-gold: #f1c40f; 
             --text-main: #2d3436;
             --text-muted: #636e72;
             --bg-light: #f9f9f9;
         }
 
-        body { font-family: 'Inter', sans-serif; margin: 0; color: var(--text-main); }
+        body { font-family: 'Poppins', sans-serif; margin: 0; color: var(--text-main); }
         .portfolio-section { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
-        
         .section-header { text-align: center; margin-bottom: 50px; }
         .section-header h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 10px; }
         .section-header h2::after { content: '.'; color: var(--primary-gold); }
 
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .result-card {
-            background: #fff;
-            border-radius: 16px;
-            border: 1px solid #eee;
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-        }
-
+        .results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .result-card { background: #fff; border-radius: 16px; border: 1px solid #eee; transition: all 0.3s ease; display: flex; flex-direction: column; }
         .result-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.07); }
-
         .card-body { padding: 25px; flex-grow: 1; }
         .category { font-size: 0.7rem; font-weight: 700; color: var(--primary-gold); text-transform: uppercase; letter-spacing: 1px; }
         .company-name { font-size: 1.3rem; margin: 10px 0; font-weight: 800; }
         .description { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 20px; }
-
-        .metrics-box {
-            background: var(--bg-light);
-            padding: 15px;
-            border-radius: 12px;
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 15px;
-        }
-
+        .metrics-box { background: var(--bg-light); padding: 15px; border-radius: 12px; display: flex; justify-content: space-around; margin-bottom: 15px; }
         .metric { text-align: center; }
         .m-value { display: block; font-size: 1.1rem; font-weight: 800; color: #000; }
         .m-label { font-size: 0.6rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
-
         .tag-row { display: flex; gap: 8px; flex-wrap: wrap; }
         .tag { font-size: 0.65rem; background: #eee; padding: 4px 10px; border-radius: 4px; font-weight: 600; }
-
     </style>
   </head>
   <body>
-    <!--Start Header -->
     <header class="nav-bg-w main-header navfix fixed-top menu-white">
       <div class="container-fluid m-pad">
         <div class="menu-header">
@@ -109,249 +60,59 @@
           </div>
           <div class="custom-nav" role="navigation">
             <ul class="nav-list">
-       <li>
-              <a class="nav-link" href="index.html" style="color:#212529;">Home</a>
-            </li>
-            <li class="nav-item"> <a class="nav-link" href="about.html" aria-haspopup="true" style="color:#212529;">About </a> </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html" id="Portfolio" aria-haspopup="true" aria-expanded="false" style="color:#D3C668;"> Portfolio</a>
-            </li>
-            <li class="nav-item"> <a class="nav-link" href="get-quote.html" style="color:#212529;">Contact</a> </li>
-            <li class="nav-item"> <a style="background-color:#ddc525; padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px;  border-radius:20px; color:#fff;" class="nav-link" href="#">Get A Quote <span class="circle"></span></a> </li>
-            </ul>
-          </div>
-          <div class="mobile-menu2">
-            <ul class="mob-nav2">
-              <li><a href="#" class="btn-round- trngl btn-br bg-btn btshad-b1"  data-bs-toggle="modal" data-bs-target="#menu-popup"><i class="fas fa-envelope-open-text"></i></a></li>
-              <li class="navm-"> <a class="toggle" href="#"><span></span></a></li>
+              <li><a class="nav-link" href="index.html" style="color:#212529;">Home</a></li>
+              <li class="nav-item"> <a class="nav-link" href="about.html" style="color:#212529;">About </a> </li>
+              <li class="nav-item"> <a class="nav-link" href="portfolio.html" id="Portfolio" style="color:#D3C668;"> Portfolio</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="get-quote.html" style="color:#212529;">Contact</a> </li>
+              <li class="nav-item"> <a style="background-color:#ddc525; padding: 5px 10px; border-radius:20px; color:#fff;" class="nav-link" href="#">Get A Quote</a> </li>
             </ul>
           </div>
         </div>
-       <!--Mobile Menu-->
-        <nav id="main-nav">
-          <ul class="first-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="get-quote.html">Contact</a></li>
-          </ul>
-          <ul class="bottom-nav">
-            <li class="prb">
-              <a href="tel:+254715242892">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
-                  <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
-                    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
-                    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
-                    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"
-                    />
-                </svg>
-              </a>
-            </li>
-            <li class="prb">
-              <a href="mailto:salimkassim30@gmail.com">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                  <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
-    <!--Mobile contact-->
-    <div class="popup-modal1">
-      <div class="modal" id="menu-popup">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <div class="common-heading">
-                <h4 class="mt0 mb0">Write a Message</h4>
-              </div>
-              <button type="button" class="closes" data-bs-dismiss="modal">&times;</button>
-            </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-              <div class="form-block fdgn2 mt10 mb10">
-                <form action="#" method="post" name="feedback-form">
-                  <div class="fieldsets row">
-                    <div class="col-md-12"><input type="text" placeholder="Full Name" name="name"></div>
-                    <div class="col-md-12"><input type="email" placeholder="Email Address" name="email"></div>
-                    <div class="col-md-12"><input type="number" placeholder="Contact Number" name="phone"></div>
-                    <div class="col-md-12"><input type="text" placeholder="Subject" name="subject"></div>
-                    <div class="col-md-12"><textarea placeholder="Message" name="message"></textarea></div>
-                  </div>
-                  <div class="fieldsets mt20 pb20">
-                    <button type="submit" name="submit" class="lnk btn-main bg-btn" data-bs-dismiss="modal">Submit<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+
+    <section class="portfolio-section" style="margin-top: 100px;">
+        <div class="section-header">
+            <h2>proven results</h2>
+            <p>Scaling brands through 360° marketing and data-driven design.</p>
         </div>
-      </div>
-    </div>
-    <!--Mobile contact-->
-    <!--End Header -->
-    <!--Breadcrumb Area-->
-    <section style="background-color:#fff; padding:150px 0px 0px 0px; position: relative; overflow: hidden;">
-      <div class="text-block">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div>
-                <div>
-                  <h1 style="font-size:70px; text-align:left; margin-top:40px;">portfolio.</h1>
-                  <p style="text-align:left; margin-top:50px; font-size:25px; line-height:30px; font-weight:medium; color:#6c6c6c">Check out some of my latest UI/UX designs, Ecommerce Websites and Graphics case studies.</p>
-                  <p style="text-align:left; margin-top:50px; font-size:20px; line-height:30px; font-weight:medium; color:#6c6c6c">I've worked at start-ups, tech companies and corporates on a range of different projects, including design systems, websites and apps.</p>
+        <div class="results-grid">
+            <div class="result-card">
+                <div class="card-body">
+                    <span class="category">Ecommerce & SEO</span>
+                    <h3 class="company-name">Unique Furniture Kenya</h3>
+                    <p class="description">Launched a CRM-integrated E-commerce site and achieved record-breaking sales through aggressive daily SEO strategies.</p>
+                    <div class="metrics-box">
+                        <div class="metric"><span class="m-value counter" data-target="25">0</span><span class="m-value" style="display:inline">%</span><span class="m-label">Sales Increase</span></div>
+                        <div class="metric"><span class="m-value">#1</span><span class="m-label">SEO Ranking</span></div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-lg-6 v-center">
-              <div class="bread-inner">
-                <div class="bread-menu">
-                  <ul>
-                    <li><img src="img/about-me.png"></li>
-                  </ul>
+            <div class="result-card">
+                <div class="card-body">
+                    <span class="category">Integrated Marketing</span>
+                    <h3 class="company-name">Optica LTD</h3>
+                    <p class="description">Supervised nationwide offline marketing (billboards & store branding) and managed micro-influencer campaigns for consistent growth.</p>
+                    <div class="metrics-box">
+                        <div class="metric"><span class="m-value counter" data-target="20">0</span><span class="m-value" style="display:inline">%</span><span class="m-label">Sign-up Rate</span></div>
+                        <div class="metric"><span class="m-value">360°</span><span class="m-label">Offline Branding</span></div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            <div class="result-card">
+                <div class="card-body">
+                    <span class="category">Performance Ads</span>
+                    <h3 class="company-name">Columbia Africa Clinic</h3>
+                    <p class="description">Executed high-converting Facebook and Google Ads campaigns, driving a quarterly boost in patient appointments.</p>
+                    <div class="metrics-box">
+                        <div class="metric"><span class="m-value counter" data-target="30">0</span><span class="m-value" style="display:inline">%</span><span class="m-label">Quarterly Growth</span></div>
+                        <div class="metric"><span class="m-value">Ads</span><span class="m-label">Google/FB</span></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <!--End Breadcrumb Area-->
- <!--Case Studies-->
-<section class="portfolio-section">
-    <div class="section-header">
-        <h2>proven results</h2>
-        <p>A track record of scaling brands through data and design.</p>
-    </div>
 
-    <div class="results-grid">
-        <div class="result-card">
-            <div class="card-body">
-                <span class="category">Ecommerce & Leadership</span>
-                <h3 class="company-name">Unique Furniture Kenya</h3>
-                <p class="description">Led digital campaigns and launched a CRM-integrated E-commerce site, achieving record-breaking online growth[cite: 14, 18, 20].</p>
-                
-                <div class="metrics-box">
-                    <div class="metric">
-                        <span class="m-value counter" data-target="25">0</span><span class="m-value" style="display:inline">%</span>
-                        <span class="m-label">Sales Increase</span>
-                    </div>
-                    <div class="metric">
-                        <span class="m-value">#1</span>
-                        <span class="m-label">SEO Ranking</span>
-                    </div>
-                </div>
-                <div class="tag-row">
-                    <span class="tag">WordPress</span> <span class="tag">Zoho Social</span> <span class="tag">SEO</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="result-card">
-            <div class="card-body">
-                <span class="category">Digital Strategy</span>
-                <h3 class="company-name">Optica LTD</h3>
-                <p class="description">Optimized online presence through influencer partnerships and conversion-focused email marketing[cite: 24, 26, 28].</p>
-                
-                <div class="metrics-box">
-                    <div class="metric">
-                        <span class="m-value counter" data-target="20">0</span><span class="m-value" style="display:inline">%</span>
-                        <span class="m-label">Sign-up Rate</span>
-                    </div>
-                    <div class="metric">
-                        <span class="m-value">5+</span>
-                        <span class="m-label">Monthly Influencers</span>
-                    </div>
-                </div>
-                <div class="tag-row">
-                    <span class="tag">Email Marketing</span> <span class="tag">Social Trends</span> <span class="tag">NPDI collab</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="result-card">
-            <div class="card-body">
-                <span class="category">Performance Marketing</span>
-                <h3 class="company-name">Columbia Africa Clinic</h3>
-                <p class="description">Executed targeted Facebook and Google Ads campaigns to drive high-intent patient appointments[cite: 30, 32].</p>
-                
-                <div class="metrics-box">
-                    <div class="metric">
-                        <span class="m-value counter" data-target="30">0</span><span class="m-value" style="display:inline">%</span>
-                        <span class="m-label">Quarterly Growth</span>
-                    </div>
-                    <div class="metric">
-                        <span class="m-value">Ads</span>
-                        <span class="m-label">Google/FB</span>
-                    </div>
-                </div>
-                <div class="tag-row">
-                    <span class="tag">Lead Gen</span> <span class="tag">PPC</span> <span class="tag">Data Analysis</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <!--Case Studies-->
-        <!--Opening Brand-->
-        <section style="display: grid;
-    place-items: center;">
-        <h1 style="font-size: 3rem;
-    padding: 20px;
-    margin: 20px 0px;">Brands i've touched</h1>
-        <div class="slider" style=" display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    overflow: hidden;
-    background: rgb(255, 255, 255);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.4px);
-    -webkit-backdrop-filter: blur(7.4px);
-    border: 1px solid rgba(255, 255, 255, 0.4);">
-            <div class="slider-items" style="display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    animation: scrolling 20s linear infinite;">
-                <img style="width: 12%; margin: 20px;" src="https://www.tec-today.com/wp-content/uploads/2016/02/logo.png"
-                    alt="">
-                <img style="width: 12%; margin: 20px;" src="https://optica.africa/cdn/shop/t/121/assets/Optica_Logo_Primary.svg?v=69688584039873325631697273391"
-                    alt="">
-                <img style="width: 12%; margin: 20px;" src="https://columbiaafrica.com/wp-content/uploads/2020/11/columbiaafrica-logo.png"
-                    alt="">
-                <img style="width: 12%; margin: 20px;" src="https://afri-access.com/wp-content/uploads/2023/08/AFRIAccess-Logo-white-bg-1.png"
-                    alt="">
-                <img style="width: 12%; margin: 20px;" src="https://myisp.co.ke/wp-content/uploads/2021/05/Untitled-design-8-e1646372092792.png"
-                    alt="">
-                <img style="width: 12%; margin: 20px; background-color:#00e; padding:10px;" src="https://www.whiterose.co.ke/images/logo_main.png" alt="">
-                <img style="width: 12%; margin: 20px;" src="https://www.karibuhomes.com/wp-content/uploads/2019/03/logo2.png"
-                    alt="">
-                <img style="width: 12%; margin: 20px;" src="https://denriafricastores.com/cdn/shop/files/WhatsAppImage2023-11-30at12.05.28.jpg?v=1701335155"
-                    alt="">
-                <img style="width: 12%; margin: 20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrccUT9Rwd87azW6Z-1vUBQpdttIF4x0VBhQ&s"
-                    alt="">
-                <img style="width: 12%; margin: 20px;" src="https://i0.wp.com/uniquefurniturekenya.co.ke/wp-content/uploads/2024/06/Unique-Furniture-Official.png?w=627&ssl=1%20627w,%20https://i0.wp.com/uniquefurniturekenya.co.ke/wp-content/uploads/2024/06/Unique-Furniture-Official.png?resize=300%2C91&ssl=1%20300w"
-                    alt="">
-                <img style="width: 12%; margin: 20px;" src="https://signventures.co.ke/wp-content/uploads/2020/06/sv-logo-png-1-986x1024.png"
-                    alt="">
-                    <img style="width: 12%; margin: 20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV8h12kM9044PYk1fka3_BKTEzyuT1txXIJg&s"
-                    alt="">
-
-
-            </div>
-        </div>
-
-    </section>
-    <!--Brand-->
-    
-    <!--Start Portfolio-->
     <section class="portfolio-page pad-tb">
       <div class="container">
         <div class="row justify-content-left">
@@ -373,385 +134,40 @@
               </ul>
             </div>
           </div>
-        </div>
+          </div>
+        
         <div class="row card-list">
-          <div class="col-lg-4 col-md-6 grid-sizer"></div>
           <div class="col-lg-4 col-sm-6 single-card-item camp">
             <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/black-nov-post.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Black November</a></h4>
-                <p>Social Media Post</p>
-              </div>
+              <div class="item-image"><a href="#"><img src="img/black-nov-post.png" alt="portfolio" class="img-fluid"/></a></div>
+              <div class="item-info"><h4><a href="#">Black November</a></h4><p>Social Media Post</p></div>
             </div>
           </div>
-			<div class="col-lg-4 col-sm-6 single-card-item camp">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/end-yer-sale.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">End Year Sale</a></h4>
-                <p>Social Media Post</p>
-              </div>
-            </div>
           </div>
-			<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="sign-up-form.html"><img src="img/drone-farm.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Agrotech</a></h4>
-                <p>Social Media Post</p>
-              </div>
-            </div>
-          </div>
-			<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/soil-testing.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Agrotech</a></h4>
-                <p>Social Media Post</p>
-              </div>
-            </div>
-          </div>
-			<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/we-move.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Movers and Packers</a></h4>
-                <p>Social Media Post</p>
-              </div>
-            </div>
-          </div>
-			<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/ward-move.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Movers and Packers</a></h4>
-                <p>Social Media Post</p>
-              </div>
-            </div>
-          </div>
-				<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/movers-client.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Movers and Packers</a></h4>
-                <p>Social Media Post</p>
-              </div>
-            </div>
-          </div>
-				<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/movers-cover.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Movers and Packers</a></h4>
-                <p>Social Media Post</p>
-              </div>
-            </div>
-          </div>
-			<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/electrics.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Auto Spares Design</a></h4>
-                <p>Web Banner</p>
-              </div>
-            </div>
-          </div>
-			<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/Brakes.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Auto Spares Design</a></h4>
-                <p>Web Banner</p>
-              </div>
-            </div>
-          </div>
-			<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/filters.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Auto Spares Design</a></h4>
-                <p>Web Banner</p>
-              </div>
-            </div>
-          </div>
-			<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/ignition2.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Auto Spares Design</a></h4>
-                <p>Web Banner</p>
-              </div>
-            </div>
-          </div>
-			<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/Lighting.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Auto Spares Design</a></h4>
-                <p>Web Banner</p>
-              </div>
-            </div>
-          </div>
-	
-			<div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/Oil-and-fluid.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Auto Spares Design</a></h4>
-                <p>Web Banner</p>
-              </div>
-            </div>
-          </div>
-		  <div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/steering.png" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Auto Spares Design</a></h4>
-                <p>Web Banner</p>
-              </div>
-            </div>
-          </div>
-			    <div class="col-lg-4 col-sm-6 single-card-item app">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="sign-up-form.html"><img src="img/sign-up-ui.jpg" alt="portfolio" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="sign-up-form.html">Sing up Form</a></h4>
-                <p>Ui, design</p>
-              </div>
-            </div>
-          </div>
-
-			
-          <div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/motion-design.jpg" alt="image" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Yashizo Photography</a></h4>
-                <p>Graphic, Motion Design</p>
-              </div>
-            </div>
-          </div>
-                    <div class="col-lg-4 col-sm-6 single-card-item camp">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/swc-optica.jpg" alt="image" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Optica Shop and Win Campaign</a></h4>
-                <p>Graphic, Social Media Campaign</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 single-card-item website">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="columbia.html"><img src="img/columbia-africa-thumbnail.jpg" alt="image" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="columbia.html">Columbia Africa Clinic</a></h4>
-                <p>Wordpress Website</p>
-              </div>
-            </div>
-          </div>
-                    <div class="col-lg-4 col-sm-6 single-card-item camp">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/blf-optica.png" alt="image" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Black Friday Optica</a></h4>
-                <p>Graphic, Social Media Campaign</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 single-card-item app">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/credit-card-page-ui.jpg" alt="image" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Credit Card Page</a></h4>
-                <p>UI/UX Design</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 single-card-item graphic">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="#"><img src="img/Logos.jpg" alt="image" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="#">Logo Designs</a></h4>
-                <p>Graphic, Print</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 single-card-item website">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="afri-access.html"><img src="img/afri-access-commerce.jpg" alt="image" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="afri-access.html">AFRIAccess Ltd</a></h4>
-                <p>Ecommerce/Marketplace</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 single-card-item website">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="unique-furniture-kenya.html"><img src="img/uniquefurn.png" alt="image" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="afri-access.html">Unique Furniture Kenya</a></h4>
-                <p>Ecommerce/Marketplace</p>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-sm-6 single-card-item blog">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="https://uniquefurniturekenya.co.ke/office/discover-the-best-office-furniture-options-for-your-workspace-in-kenya/"><img src="img/ufk-blog.jpg" alt="image" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="afri-access.html">Discover the Best Office Furniture Options for Your Workspace in Kenya</a></h4>
-                <p>Blog/Marketplace</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 single-card-item blog">
-            <div class="isotope_item hover-scale">
-              <div class="item-image">
-                <a href="https://uniquefurniturekenya.co.ke/home-care-maintenance/5-ways-to-give-old-furniture-a-second-life/"><img src="img/ufk-blog2.jpg" alt="image" class="img-fluid"/> </a>
-              </div>
-              <div class="item-info">
-                <h4><a href="afri-access.html">5 Ways to Give Old Furniture a Second Life</a></h4>
-                <p>Blog/Marketplace</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
-    <!--End Portfolio-->
-	
-<!--Start Footer-->
-<footer>
-<div class="footer-svg">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  viewBox="0 0 1920 80" style="enable-background:new 0 0 1920 80;" xml:space="preserve">
-  <path class="st0" d="M0,27.2c589.2,129.4,1044-69,1920,31v-60H3.2L0,27.2z"/>
-</svg>
-</div>
-<div class="footer-row2">
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-12 col-sm-12 text-center">
-      <a class="navbar-brand img-ctr" href="#"> <img src="img/salim-logo-white.png" alt="Logo" width="100" /></a>
-      <ul class="footer-link-v2 link-hover mt30">
-         <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="get-quote.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-</div>
-<hr class="hline">
-<div class="footer-row3">
-<div class="copyright">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="footer-social-media-icons">
-        
-          <a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-          <a href="javascript:void(0)" target="blank"><i class="fab fa-behance"></i></a>
-        </div>
-        <div class="footer-">
-          <p>© 2024. All Rights Reserved By <a href="#" target="blank">Salim Kassim</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</footer>
-<!--End Footer-->
-    <!-- js placed at the end of the document so the pages load faster -->
-	  <script>
-const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counter = entry.target;
-                const target = +counter.getAttribute('data-target');
-                let count = 0;
-                const inc = target / 50;
-                const update = () => {
-                    if (count < target) {
-                        count += inc;
-                        counter.innerText = Math.ceil(count);
-                        setTimeout(update, 20);
-                    } else { counter.innerText = target; }
-                };
-                update();
-            }
-        });
-    }, { threshold: 0.5 });
 
-    document.querySelectorAll('.counter').forEach(c => observer.observe(c));
-	  </script>
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/plugin.min.js"></script>
-    <!--common script file-->
     <script src="js/main.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = +counter.getAttribute('data-target');
+                    let count = 0;
+                    const update = () => {
+                        const inc = target / 50;
+                        if (count < target) { count += inc; counter.innerText = Math.ceil(count); setTimeout(update, 20); }
+                        else { counter.innerText = target; }
+                    };
+                    update();
+                }
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.counter').forEach(c => observer.observe(c));
+    </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
