@@ -40,6 +40,122 @@
         transform: translateX(-20%);
     }
 }
+      :root {
+
+    --primary-color: #f1c40f; /* From your 'About Me' button */
+
+    --dark-text: #2d3436;
+
+    --light-bg: #f9f9f9;
+
+}
+
+
+
+:root {
+
+            --primary-gold: #f1c40f; 
+
+            --text-main: #2d3436;
+
+            --text-muted: #636e72;
+
+            --bg-light: #f9f9f9;
+
+        }
+
+
+
+        body { font-family: 'Inter', sans-serif; margin: 0; color: var(--text-main); }
+
+        .portfolio-section { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+
+        
+
+        .section-header { text-align: center; margin-bottom: 50px; }
+
+        .section-header h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 10px; }
+
+        .section-header h2::after { content: '.'; color: var(--primary-gold); }
+
+
+
+        .results-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+            gap: 30px;
+
+        }
+
+
+
+        .result-card {
+
+            background: #fff;
+
+            border-radius: 16px;
+
+            border: 1px solid #eee;
+
+            transition: all 0.3s ease;
+
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+
+
+        .result-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.07); }
+
+
+
+        .card-body { padding: 25px; flex-grow: 1; }
+
+        .category { font-size: 0.7rem; font-weight: 700; color: var(--primary-gold); text-transform: uppercase; letter-spacing: 1px; }
+
+        .company-name { font-size: 1.3rem; margin: 10px 0; font-weight: 800; }
+
+        .description { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 20px; }
+
+
+
+        .metrics-box {
+
+            background: var(--bg-light);
+
+            padding: 15px;
+
+            border-radius: 12px;
+
+            display: flex;
+
+            justify-content: space-around;
+
+            margin-bottom: 15px;
+
+        }
+
+
+
+        .metric { text-align: center; }
+
+        .m-value { display: block; font-size: 1.1rem; font-weight: 800; color: #000; }
+
+        .m-label { font-size: 0.6rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
+
+
+
+        .tag-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+        .tag { font-size: 0.65rem; background: #eee; padding: 4px 10px; border-radius: 4px; font-weight: 600; }
+
+
+
 
     </style>
   </head>
