@@ -36,6 +36,102 @@
     }
 }
 
+
+			:root {
+    --primary-color: #f1c40f; /* From your 'About Me' button */
+    --dark-text: #2d3436;
+    --light-bg: #f9f9f9;
+}
+
+.portfolio-section {
+    padding: 60px 20px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.result-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.result-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    position: relative;
+    height: 200px;
+    background: #dfe6e9;
+}
+
+.kpi-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--primary-color);
+    color: #000;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #636e72;
+}
+
+.metrics-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric .number {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-text);
+}
+
+.metric .label {
+    font-size: 0.7rem;
+    color: #b2bec3;
+}
+
+.view-case-btn {
+    display: inline-block;
+    color: var(--dark-text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
     </style>
   </head>
   <body>
@@ -162,7 +258,42 @@
       </div>
     </section>
     <!--End Breadcrumb Area-->
-    
+ <!--Case Studies-->
+	  <section id="portfolio-results" class="portfolio-section">
+    <div class="container">
+        <h2 class="section-title">Case Studies & Results</h2>
+        <p class="section-subtitle">Data-driven campaigns that delivered measurable ROI.</p>
+        
+        <div class="results-grid">
+            <div class="result-card">
+                <div class="card-image">
+                    <img src="your-project-image.jpg" alt="E-commerce Campaign">
+                    <div class="kpi-badge">+45% ROAS</div>
+                </div>
+                <div class="card-content">
+                    <span class="category">Performance Marketing</span>
+                    <h3>E-commerce Growth Strategy</h3>
+                    <p>Optimized Meta Ads and landing pages for a local retailer, resulting in a significant decrease in CPA.</p>
+                    
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <span class="number">15%</span>
+                            <span class="label">Conversion Lift</span>
+                        </div>
+                        <div class="metric">
+                            <span class="number">$4.2k</span>
+                            <span class="label">Ad Spend Managed</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="view-case-btn">View Detailed Report</a>
+                </div>
+            </div>
+            
+            </div>
+    </div>
+</section>
+    <!--Case Studies-->
         <!--Opening Brand-->
         <section style="display: grid;
     place-items: center;">
@@ -581,6 +712,34 @@
 </footer>
 <!--End Footer-->
     <!-- js placed at the end of the document so the pages load faster -->
+	  <script>
+		  // Simple counter animation for the metrics
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            const counters = entry.target.querySelectorAll('.number');
+            counters.forEach(counter => {
+                const target = +counter.innerText.replace('%', '').replace('$', '').replace('k', '');
+                let count = 0;
+                const updateCount = () => {
+                    const speed = 200;
+                    const inc = target / speed;
+                    if (count < target) {
+                        count += inc;
+                        counter.innerText = Math.ceil(count) + (counter.innerText.includes('%') ? '%' : '');
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target + (counter.innerText.includes('%') ? '%' : '');
+                    }
+                };
+                updateCount();
+            });
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.result-card').forEach(card => observer.observe(card));
+	  </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script> 
@@ -589,6 +748,7 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
 
 
 
