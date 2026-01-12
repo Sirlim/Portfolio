@@ -716,32 +716,26 @@
 <!--End Footer-->
     <!-- js placed at the end of the document so the pages load faster -->
 	  <script>
-		  // Simple counter animation for the metrics
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            const counters = entry.target.querySelectorAll('.number');
-            counters.forEach(counter => {
-                const target = +counter.innerText.replace('%', '').replace('$', '').replace('k', '');
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = +counter.getAttribute('data-target');
                 let count = 0;
-                const updateCount = () => {
-                    const speed = 200;
-                    const inc = target / speed;
+                const inc = target / 50;
+                const update = () => {
                     if (count < target) {
                         count += inc;
-                        counter.innerText = Math.ceil(count) + (counter.innerText.includes('%') ? '%' : '');
-                        setTimeout(updateCount, 1);
-                    } else {
-                        counter.innerText = target + (counter.innerText.includes('%') ? '%' : '');
-                    }
+                        counter.innerText = Math.ceil(count);
+                        setTimeout(update, 20);
+                    } else { counter.innerText = target; }
                 };
-                updateCount();
-            });
-        }
-    });
-}, { threshold: 0.5 });
+                update();
+            }
+        });
+    }, { threshold: 0.5 });
 
-document.querySelectorAll('.result-card').forEach(card => observer.observe(card));
+    document.querySelectorAll('.counter').forEach(c => observer.observe(c));
 	  </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/jquery.min.js"></script>
@@ -751,6 +745,7 @@ document.querySelectorAll('.result-card').forEach(card => observer.observe(card)
     <script src="js/main.js"></script>
   </body>
 </html>
+
 
 
 
